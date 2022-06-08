@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>animation | size change | heart beat</title>
+<style type="text/css">
+body { /*this gives text (the heart symbol) a quite large size among other features*/
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size: 4em;		
+	color: darkred;
+}
+#myHeart { /*this is the HTML element that uses the heart animation*/
+	animation-name: beat;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes beat { /*this is the definition of the animation sequence*/
+	0% {
+		font-size: 0.84em;
+	}
+	20% {
+		font-size: 1em;
+	}
+	40% {
+		font-size: 0.84em;
+	}
+	60% {
+		font-size: 1em;
+	}
+	80% {
+		font-size: 0.84em;
+	}
+	100% {
+		font-size: 0.84em;
+	}
+}
+
+</style>
+</head>
+
+<body>
+	<p id="myHeart">&hearts;</p>
+
+</body>
+</html>
